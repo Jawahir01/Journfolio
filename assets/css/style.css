@@ -9,3 +9,30 @@
 
     background-color: #000;
   }
+
+
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  .nav-item{
+    padding: 15px;
+  }
+
+  .nav-link{
+    text-align: center;
+    font-size: 20px;
+    font-family: Exo, sans-serif;
+    font-weight:400;
+    color: white;
+    margin: 4px;
+  }
+
+  .nav-link:hover {
+    background-color: #159765;
+  }
+@media screen and (max-width: 950px){ 
+    .nav-item {
+        padding: 0px;
+    }
+  }
+
