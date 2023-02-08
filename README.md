@@ -90,7 +90,7 @@
     
     
 - CSS
-    
+    1. The footer was annoying. It kepting sticking on top of the header. I gave it the margin-top:100% so that it can go down it worked but it add a more size to the whole page. The mistake was that I was using percintage rather than a px or rem mersuermints. It worked well when the  margin-bottom: 10px; and margin-top: 20px;
     
 ### test cases (screenshots)
 
