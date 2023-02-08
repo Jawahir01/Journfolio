@@ -90,15 +90,13 @@
     
     
 - CSS
-    1. The footer was annoying. It kepting sticking on top of the header. I gave it the margin-top:100% so that it can go down it worked but it add a more size to the whole page. The mistake was that I was using percintage rather than a px or rem mersuermints. It worked well when the  margin-bottom: 10px; and margin-top: 20px;
+    1. 
     
 ### test cases (screenshots)
 
-- Adjusting the background of the header menue while hover to be in the middle.
+- The footer was annoying. It kepting sticking on top of the header. I gave it the margin-top:100% so that it can go down it worked but it add a more size to the whole page. The mistake was that I was using percintage rather than a px or rem mersuermints. It worked well when the  margin-bottom: 10px; and margin-top: 20px;
 
--  In the Contant page: putting the fontawosome icons as a placeholder inside the input
-    field alongside the text.
-
+- 
 ### Known bugs
 1. 
 
@@ -124,16 +122,18 @@
 
 2. The website is my version from
     https://bootstrapmade.com/photofolio-bootstrap-photography-website-template
-    that include the span on the mane page and the contact form with some changes.
+    I used the span on the main page and the contact form with some changes.
 
-3. The icons in the footer were from Font Awesome
+3. The icons in the footer were from ![Font Awesome](https://fontawesome.com)
 
 4. The header code is from https://getbootstrap.com/docs/5.3/examples/headers/#
 
+5. In the Contact page: the icons inside palceholder is from ![Stackoverflow](https://stackoverflow.com/questions/19350291/use-font-awesome-icon-in-placeholder). The member @huckbit -Mar 29, 2016 at 14:43- shared his method ![code ](https://codepen.io/huckbit/pen/rezezb?editors=1100#0)(https://fontawesome.com/v4/cheatsheet/).
+I used the rest of the FontAwesome hex-code icons from (https://fontawesome.com/v4/cheatsheet/)
+
 
 ### Media
-1. The logo of the page.
-    Source: https://www.canva.com/logos
+1. I edited the design of the logo using ![Canva] (https://www.canva.com/logos)
 
 2. The photo used on the home page and the pictures of the About page are from
     www.google.com

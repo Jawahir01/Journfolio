@@ -19,7 +19,7 @@
 
 <body>
                 <!-- ======= Header Section======= -->
-                        <!--header is from https://www.w3schools.com/bootstrap5/bootstrap_navbar.php-->
+                    <!--header is from https://www.w3schools.com/bootstrap5/bootstrap_navbar.php-->
     <nav class="navbar navbar-expand-sm  navbar-dark fixed-top">
         <div class="container-fluid">
                         <!-- logo -->
@@ -27,7 +27,7 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-                        <!-- Navegation menu -->
+                    <!-- Navegation menu -->
           <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
             <ul class="navbar-nav justify-content-end">
               <li class="nav-item">
@@ -37,7 +37,7 @@
                 <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link active" href="contact.html">Contact</a>
               </li>    
             </ul>
           </div>
@@ -45,24 +45,48 @@
     </nav>
       
 
-                <!-- ======= Hero Section ======= -->
-    <section  class="hero  justify-content-center align-items-center">
-            <div class="container">
-              <div class="row justify-content-lg-around">
-                <img src="assets/images/Mathew_Allen.jpg" alt="Mathew_Allen" class="image img-fluid">
-                <div class="col-lg-6 text-center">
-                    <h2 class="h2">Hi, I'm <span>Mathew Allen</span><br> from London</h2>
-                        
-                    <h3 class="h3"> Online Digital Journalist</h3>
-                    <br>
-                    <div class="btn">
-                        <a href="contact.html" class="btn-get-started">Available for hire</a>
+                <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+    <div class="container">
+
+        <div class="row gy-1 justify-content-center">
+
+            <div class="col-lg-5 text-center">
+                <h2>Let's Get in Touch</h2>
+            </div>
+        </div>
+            <!-- idea of code for contact form  https://codepen.io/huckbit/pen/rezezb?editors=1100#0-->
+        <div class="row gy-4 justify-content-center mt-sm-4">
+            <div class="col-lg-9">
+                <form action="forms/contact.php" method="post"  class="php-email-form">
+                <div class="row">
+                    <div class="col-md-6 form-group "> 
+                        <!-- code for using fontawesome inside palceholder from https://codepen.io/huckbit/pen/rezezb?editors=1100#0-->
+                        <input type="text" name="name" class="form-control fontAwesome" id="name" placeholder="&#xf007; Your Name" required>  
+                    </div>
+                    
+                    <div class="col-md-6 form-group mt-3 mt-md-0"> 
+                        <input type="tel" class="form-control fontAwesome" name="phone" id="phone" placeholder="&#xf095; Your phone number" required>
                     </div>
                 </div>
-              </div>
+
+                <div class="form-group mt-3"> 
+                    <input type="email" class="form-control fontAwesome" name="email" id="email" placeholder=" &#xf0e0; Your Email" required="">
+                </div>
+
+                <div class="form-group mt-3">
+                    <textarea class="form-control fontAwesome" name="message" rows="7" placeholder="&#xf1d7; Your Message" required=""></textarea>
+                </div>
+            
+            <div class="text-center ">
+                <button type="submit" class="btn-get-started">Send Message</button>
             </div>
-    </section>
-                <!--End Hero Section -->
+        </form>
+        </div>
+    </div>
+    </div>
+</section>
+                
     
 
             <!-- ======= Footer Section =======  -->  
