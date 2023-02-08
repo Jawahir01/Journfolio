@@ -40,6 +40,7 @@
   .nav-link:hover {
     background-color: #159765;
   }
+  /* ---------If the screen size is 950px wide or less--------*/
 @media screen and (max-width: 950px){ 
     .nav-item {
         padding: 0px;
@@ -51,8 +52,7 @@
   # Footer
   --------------------------------------------------------------*/
   .footer {
-    margin-bottom: 10px;
-    margin-top: 20px;
+    display: block;
     padding: 20px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     position: relative;
@@ -78,24 +78,25 @@
   .footer-social-links a , i:hover {
     color: #fff;
   }
-  
-  /* If the screen size is 600px wide or less*/
+
+/* --------If the screen size is between 610px and 1186px------*/
+@media screen and (min-width: 610px) and (max-width: 1186px){
+    .footer-social-links a {
+        font-size: 25px;
+        padding: 15px 0;
+    }
+}
+  /* ---------If the screen size is 600px wide or less--------*/
   @media screen and (max-width: 600px) {
     .footer-social-links a {
         font-size: 23px;
         padding: 10px 0;
     }
   }
-/* If the screen size is between 600px and 1015px*/
-@media screen and (min-width: 600px) and (max-width: 1015px){
-    .footer-social-links a {
-        font-size: 25px;
-        padding: 15px 0;
-    }
-}
+
 
   /*--------------------------------------------------------------
-# Hero Section
+# Home Page/ Hero Section
 --------------------------------------------------------------*/
 .hero {
     width: 75%;
@@ -173,7 +174,7 @@
     color:black;
 }
 
-  /* If the screen size is 600px wide or less*/
+  /* -------If the screen size is 600px wide or less-------*/
   @media screen and (max-width: 600px) {
     .hero h2  {
       font-size: 20px;
@@ -202,7 +203,7 @@
 }
 }
 
- /* If the screen size is between 600px and 1015px*/
+ /* --------If the screen size is between 600px and 1015px------*/
  @media screen and (min-width: 600px) and (max-width: 1015px){
     .hero h2  {
         font-size: 33px;
@@ -223,6 +224,234 @@
     height: auto; 
 }
  }
+
+    /*--------------------------------------------------------------
+  # About-Me page 
+  --------------------------------------------------------------*/
+
+            /*--------About Me Section------*/
+  .adout-outer{
+    height:350px;
+    width: 100%;
+    margin-top: 180px;
+    padding-left: 180px;
+    margin-bottom: 25px;
+}
+  .about-contect{
+    height: 350px;
+    width: 88%;
+    background-color: rgba(245, 245, 220, 0.692);
+    position: relative;
+    --bs-gutter-x: 0rem;
+  }
+  
+  .about-me{
+    font-weight: 700;
+    font-family: Oswald,sans-serif;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 25px
+  }
+
+  .content{
+    font-weight: 700;
+    font-family: Exo,sans-serif;
+    color: #000;
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+  }
+/* ---------If the screen size is 950px wide or less--------*/
+  @media screen and (max-width: 950px){
+    .adout-outer{
+      height:auto;
+    }
+    .about-contect{
+      height: auto;
+    }
+    .content{
+      font-weight: 500;
+    }
+  }
+            /*--------Experience Section------*/
+  .experience-outer{
+    height: 1010px;
+    width: 90%;
+    padding-left: 180px;
+    margin-top: 20px
+    
+  }
+  .exp-box{
+    height: 1010px;
+    background-image: url(../images/digital-journ1.jpg);
+    background-size: cover;
+    padding-right: calc(var(--bs-gutter-x) * 0);
+    padding-left: calc(var(--bs-gutter-x) * 0);
+  }
+
+  .experience-box{
+    height: 1010px;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.6);
+    position: relative;
+    --bs-gutter-x: 0rem;
+    margin-top: -20px
+  }
+
+  .exp-title{
+    font-weight: 700;
+    font-family: Oswald,sans-serif;
+    color: beige;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px;
+    margin-top: 20px;
+  }
+
+  .exp-content{
+    font-weight: 500;
+    font-family: Exo,sans-serif;
+    color: beige;
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+
+  /* --------If the screen size is between 610px and 1186px------*/
+  @media screen and (min-width: 610px) and (max-width: 1186px){
+    .experience-outer{
+        height: auto;
+      }
+      .exp-box{
+        height: auto;
+      }
+      .experience-box{
+        height: auto;
+      }
+      .exp-title{
+        font-weight: 500;
+      }
+      .exp-content{
+        font-weight: 250;
+      }
+  }
+
+  /* ---------If the screen size is 600px wide or less--------*/
+  @media screen and (max-width: 600px){
+    .experience-outer{
+      height: auto;
+    }
+    .exp-box{
+      height: auto;
+    }
+    .experience-box{
+      height: auto;
+    }
+    .exp-title{
+      font-weight: 400;
+    }
+    .exp-content{
+      font-weight: 300;
+    }
+  }
+             /*--------Skills Section------*/
+  .skills-outer{
+    height: 660px;
+    width: 90%;
+    padding-left: 180px;
+    margin-top: 25px;
+    margin-bottom: 5%;
+    display: block;         /*...before this the image indide the block becomes bigger in 
+                                  tablet and mobile .*/
+  }
+
+  .skills-box{
+    height: 660px;
+    background-color: rgba(55, 50, 50, 0.847);
+    background-size: cover;
+    width: 100%;
+  }
+
+  .skills-title{
+    font-weight: 700;
+    font-family: Oswald,sans-serif;
+    color: beige;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px;
+    margin-top: 20px;
+  }
+
+  .skills-content{
+    font-weight: 300;
+    font-family: Exo,sans-serif;
+    color: beige;
+    margin-top: 11px;
+    padding-left: 55px;
+    position: relative;
+  }
+  .skills-img-box{
+    background-image: url(../images/digital-journ5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 7px;
+    height: 350px;
+    width: 350px;
+    right: 225px;
+    position: absolute;
+}
+  .skills-img{
+    background-color: rgba(0, 0, 0, 0.632);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    position: inherit;
+  }
+
+/* --------If the screen size is between 610px and 1186px------*/
+  @media screen and (min-width: 610px) and (max-width: 1186px){
+    .skills-box{
+        height: auto;
+        margin-bottom: 20%; /* ----????----here is my issue------*/
+    }
+    .skills-box{
+        height: auto;
+    }
+    .skills-img{
+        height: auto;
+    }
+    .skills-img-box{
+        height: auto;
+    }
+    .skills-title{
+        font-weight: 500;
+    }
+}
+
+/* ---------If the screen size is 600px wide or less--------*/
+  @media screen and (max-width: 600px){
+    .skills-box{
+        height: auto;
+        margin-bottom: 20%; /* ----????----here is my issue------*/
+    }
+    .skills-box{
+        height: auto;
+    }
+    .skills-img{
+        display: none;
+    }
+    .skills-img-box{
+        display: none;
+    }
+    .skills-title{
+        font-weight: 400;
+    }
+    .skills-content{
+        font-weight: 250;
+    }
+}
+
 
 
   /*--------------------------------------------------------------
@@ -270,15 +499,13 @@
     background: #0f5b3e;
   }
 
-  
-
-  /* If the screen size is 600px wide or less*/
+/* ---------If the screen size is 600px wide or less--------*/
   @media screen and (max-width: 600px) {
     .contact {
         margin-top: 22%;;
   }
-  }
-/* If the screen size is between 400px and 1015px*/
+  }            
+/* --------If the screen size is between 400px and 1015px------*/
   @media screen and (min-width: 400px) and (max-width: 1015px){
     .contact {
         margin-top: 35%;;
