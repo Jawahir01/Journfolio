@@ -505,9 +505,72 @@
         margin-top: 22%;;
   }
   }            
-/* --------If the screen size is between 400px and 1015px------*/
+/* --------If the screen size is between 600px and 1015px------*/
   @media screen and (min-width: 400px) and (max-width: 1015px){
     .contact {
         margin-top: 35%;;
   }
   }
+
+
+    /*--------------------------------------------------------------
+  # Thank You page 
+  --------------------------------------------------------------*/
+  .adout-outer{
+    height:350px;
+    width: 100%;
+    margin-top: 180px;
+    padding-left: 180px;
+    margin-bottom: 25px;
+}
+  .about-contect{
+    height: 350px;
+    width: 88%;
+    background-color: rgba(245, 245, 220, 0.692);
+    position: relative;
+    --bs-gutter-x: 0rem;
+  }
+  
+  .thanks{
+    font-weight: 700;
+    font-family: Roboto,sans-serif;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 30px
+  }
+  
+  .thank_sentence{
+    font-weight: 700;
+    font-family: Exo,sans-serif;
+    color: #000;
+    text-align: center;
+    margin-top: 90px;
+    left: 43%;
+  }
+  
+  .chick{
+    font-size: 100px;
+    font-weight: 700;
+    position: absolute;
+    display: block;
+    left: 45%;
+    padding: 20px;
+    color: #159765;
+  }
+
+  /* ---------If the screen size is 600px wide or less--------*/
+  @media screen and (max-width: 600px) {
+    .chick{
+        font-size: 90px;
+        font-weight: 600;
+        left: 35%;
+  }
+  .thank_sentence{
+    font-weight: 600;
+  }
+  .thanks{
+    font-weight: 600;
+  }
+}
