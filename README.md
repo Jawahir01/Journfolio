@@ -1,5 +1,5 @@
 # Purpose of the project
-
+This project is to show case my apilities and the progression of my performance in building a personal website for an online digital journalist. It is also the first part of the CodeInstitute Milestone projects.
 
 ### user stories
  As a visiting user, I would like to contact the owner for business enquiries
