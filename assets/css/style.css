@@ -1,609 +1,556 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;1,200;1,300&family=Oswald:wght@200&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;1,200;1,300&family=Oswald:wght@200&family=Cardo:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
   # General
   --------------------------------------------------------------*/
-  body {
-    background-color: #000;
-  }
+body {
+  background-color: #000;
+}
 
-  * {
-    margin:0;
-    padding:0;
-    border:0;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
   # Header
   --------------------------------------------------------------*/
-  .navbar{
-    background-color: #000;
-    top: 0px;
-  }
-  .nav-item{
-    padding: 15px;
-  }
+.navbar {
+  background-color: #000;
+  top: 0px;
+}
 
-  .nav-link{
-    text-align: center;
-    font-size: 20px;
-    font-family: Exo, sans-serif;
-    font-weight:400;
-    color: white;
-    margin: 4px;
-    
-  }
+.nav-item {
+  padding: 15px;
+}
 
-  .nav-link:hover {
-    background-color: #159765;
+.nav-link {
+  text-align: center;
+  font-size: 20px;
+  font-family: Exo, sans-serif;
+  font-weight: 400;
+  color: white;
+  margin: 4px;
+
+}
+
+.nav-link:hover {
+  background-color: #159765;
+}
+
+/* ---------If the screen size is 950px wide or less--------*/
+@media screen and (max-width: 950px) {
+  .nav-item {
+    padding: 0px;
   }
-  /* ---------If the screen size is 950px wide or less--------*/
-@media screen and (max-width: 950px){ 
-    .nav-item {
-        padding: 0px;
-    }
-  }
+}
 
 
 /*--------------------------------------------------------------
   # Footer
   --------------------------------------------------------------*/
-  .footer {
-    display: block;
-    padding: 20px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    position: relative;
-    margin-top: 20px;
-  }
-
-  .footer-social-links{
-    padding-left: 28%;
-  }
-
-  .footer-social-links i {
-    font-size: 100%;
-    text-align: center;
-  }
-  
-  .footer-social-links a , i {
-    color: rgba(255, 255, 255, 0.5);
-    padding-left: 50px;
-    display: inline-block;
-    line-height: 0px;
-    font-size: 30px;
-  }
-  
-  .footer-social-links a , i:hover {
-    color: #fff;
-  }
-
-/* --------If the screen size is between 610px and 1186px------*/
-@media screen and (min-width: 610px) and (max-width: 1186px){
-    .footer-social-links a {
-        font-size: 25px;
-        padding: 15px 0;
-    }
+.footer {
+  margin-top: 5%;
+  padding: 2% 30%;
+  border-top: 5px solid rgba(255, 255, 255, 0.15);
 }
-  /* ---------If the screen size is 600px wide or less--------*/
-  @media screen and (max-width: 600px) {
-    .footer-social-links a {
-        font-size: 23px;
-        padding: 10px 0;
-    }
-  }
 
+.footer-social-links {
+  text-align: center;
+}
 
-  /*--------------------------------------------------------------
+.footer-social-links i {
+  font-size: 3.3vw;
+  text-align: center;
+}
+
+.footer-social-links a,
+i {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 2% 5%;
+  display: inline-block;
+}
+
+.footer-social-links a,
+i:hover {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
 # Home Page/ Hero Section
 --------------------------------------------------------------*/
-.hero {
-    width: 75%;
-    height:550px;
-    background-color: rgba(255, 255, 255, 0.495);
-    background-size: cover;
-    position:relative;
-    padding: 40px 0 18px 0;
-    left: 20%;
-    margin-top: 2px;
-    clear: both;
-    margin-bottom: 40px;
-}
-  
-.hero h2 , h3 {
-    margin: 0 0 10px 0;
-    font-size: 40px;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    font-family: Roboto,sans-serif;
-    position: absolute;
-    top: 45%;
-    left: 20%;
-    transform: translate(-40%, -50%);
-    display: block;
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/5.jpg") center;
+
+  /* Set a specific height */
+  width: 100%;
+  max-height: 700px;
+
+  /* Position and center the image to scale nicely on all screens */
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 3%;
+  margin-bottom: 3%;
+
 }
 
-.hero h2 span {
-    position: relative;
-    z-index: 1;
-    padding: 0 5px;
-    display: inline-block;
-}
-  
-.hero h2 span:before {
-    content: "";
-    position: absolute;
-    height: 50%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #159765;
-    z-index: -1;
-}
-  
-.hero h3 {
-    color: #000000;
-    margin-bottom: 7px;
-    font-size: 30px;
-    top: 69%;
-    left: 20%;
+/* Place text in the middle of the image */
+.hero-container {
+  position: absolute;
 }
 
-  .image {
-        width: 800px;
-        padding-left: 200px; 
+.hero-text{
+  margin-top: 400px;
+}
+
+.hero-text h1 {
+  margin: 0 0 10% 0;
+  color: #fff;
+  font-family: Cardo, sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero-text h1 span {
+  position: relative;
+  z-index: 1;
+  padding: 0 5px;
+  display: inline-block;
+}
+
+.hero-text h1 span:before {
+  content: "";
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #159765;
+  z-index: -1;
+}
+
+.hero-text p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10%;
+  font-size: x-large;
+}
+
+
+/*--------------------------------------------------------------*/
+
+
+.btn {
+
+  display: block;
+  margin: 1%;
+  padding: 0%;
 }
 
 .btn-get-started {
-    font-family: Exo;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 12px 50px;
-    border-radius: 4px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: 0.3s;
-    color: #fff;
-    background: #159765;
-    margin-bottom: 5px;
-    text-decoration: none;
+  font-family: Exo;
+  font-weight: 600;
+  font-size: medium;
+  padding: 1% 4%;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #159765;
+  text-decoration: none;
 }
 
 .btn-get-started:hover {
-    background: #0f5b3e;
-    color:black;
-}
-/* --------If the screen size is between 600px and 1015px------*/
-@media screen and (min-width: 600px) and (max-width: 1015px){
-  .hero h2  {
-      font-size: 33px;
-      left: 30%;
-      top: 40%;
-    }
-    .hero h3 {
-        font-size: 25px;
-        font-weight: 200;
-        left: 35%;
-        top: 55%;
-    }
-    .btn {
-      --bs-btn-padding-x: 1.25rem;
-      --bs-btn-padding-y: 4.375rem;
-}
-.image {
-  height: auto; 
-}
+  background: #0f5b3edc;
+  color: #fff;
 }
 
-  /* -------If the screen size is 600px wide or less-------*/
-  @media screen and (max-width: 600px) {
-    .hero h2  {
-      font-size: 20px;
-      top: 30%;
-      left: 25%;
-    }
-    .hero h3 {
-        font-size: 20px;
-        top: 50%;
-        left: 30%;
-        padding: 5px;
-    }
-    .btn-get-started {
-        top: 10%;
-    }
+.testimonial {
+  margin-top: 15%;
+  display: block;
+}
 
-    .btn {
-        --bs-btn-padding-x: 1.25rem;
-        --bs-btn-padding-y: 6.375rem;
+.testimonial-title {
+  font-size: 7vw;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #f5f5dc;
+  font-family: Cardo, sans-serif;
+  margin: 3% 25%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  min-height: 250px;
+  position: relative;
+  background: #f1f1f1f1;
+  border: 2px solid #ccc;
+  margin: 0 10%;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 70px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #159765;
+  font-weight: bold;
+  font-size: 40px;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.Avatar {
+  width: 150px;
+  float: left;
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 3px solid #159765;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #159765;
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 16px;
+  background: #ddd;
+  margin: 0 10%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #159765;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+  background-color: #717171d0;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+  font-weight: 500;
+  font-size: larger;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: #159765;
+  font-size: large;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 500px) {
+  .Avatar {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    float: none;
+    display: block;
   }
-  .hero {
-    min-height: auto;
-  }
-  .image {
-    height: auto; 
-}
 }
 
-/* -------If the screen size is 600px wide or less-------*/
-@media screen and (max-width: 599px) {
-  .hero h2  {
-    font-size: 20px;
-    top: 30%;
-    left: 25%;
-  }
-  .hero h3 {
-      font-size: 20px;
-      top: 50%;
-      left: 30%;
-      padding: 5px;
-  }
-  .btn-get-started {
-      top: 10%;
-  }
-
-  .btn {
-      --bs-btn-padding-x: 1.25rem;
-      --bs-btn-padding-y: 10.375rem;
-}
-.hero {
-  min-height: auto;
-}
-.image {
-  height: auto; 
-}
-}
-
- 
-
-    /*--------------------------------------------------------------
+/*--------------------------------------------------------------
   # About-Me page 
   --------------------------------------------------------------*/
 
-            /*--------About Me Section------*/
-  .about-outer{
-    height:350px;
-    width: 100%;
-    margin-top: 2px;
-    padding-left: 180px;
-    margin-bottom: 25px;
-}
-  .about-contect{
-    height: 350px;
-    width: 88%;
-    background-color: rgba(245, 245, 220, 0.692);
-    position: relative;
-    --bs-gutter-x: 0rem;
-  }
-  
-  .about-me{
-    font-weight: 700;
-    font-family: Oswald,sans-serif;
-    color: #000;
-    text-align: center;
-    text-transform: uppercase;
-    margin-top: 25px
-  }
+/*--------About Me Section------*/
+.about-outer {
+  min-height: 350px;
+  position: relative;
+  margin: 10%;
+  background-color: #f5f5dc8d;
 
-  .content{
-    font-weight: 700;
-    font-family: Exo,sans-serif;
-    color: #000;
-    text-align: center;
-    margin-top: 30px;
-    padding: 30px;
-  }
+}
+
+.about-contect {
+  height: auto;
+  width: 100%;
+  position: relative;
+
+}
+
+.about-me {
+  font-weight: 700;
+  font-family: Oswald, sans-serif;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 25px
+}
+
+.content {
+  font-weight: 700;
+  font-family: Exo, sans-serif;
+  color: #000;
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px;
+}
+
 /* ---------If the screen size is 950px wide or less--------*/
-  @media screen and (max-width: 950px){
-    .adout-outer{
-      height:auto;
-    }
-    .about-contect{
-      height: auto;
-    }
-    .content{
-      font-weight: 500;
-    }
-  }
-            /*--------Experience Section------*/
-  .experience-outer{
-    height: 1010px;
-    width: 90%;
-    padding-left: 180px;
-    margin-top: 20px
-    
-  }
-  .exp-box{
-    height: 1010px;
-    background-image: url(../images/digital-journ1.jpg);
-    background-size: cover;
-    padding-right: calc(var(--bs-gutter-x) * 0);
-    padding-left: calc(var(--bs-gutter-x) * 0);
-  }
 
-  .experience-box{
-    height: 1010px;
-    width: 100%;
-    background-color: rgba(0,0,0, 0.6);
-    position: relative;
-    --bs-gutter-x: 0rem;
-    margin-top: -20px
-  }
+/*--------Experience Section------*/
+.experience-outer {
+  min-height: 1030px;
+  position: relative;
+  margin: 3% 10%;
 
-  .exp-title{
-    font-weight: 700;
-    font-family: Oswald,sans-serif;
-    color: beige;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 40px;
-    margin-top: 20px;
-  }
-
-  .exp-content{
-    font-weight: 500;
-    font-family: Exo,sans-serif;
-    color: beige;
-    margin-top: 20px;
-    padding-left: 20px;
-  }
-
-  /* --------If the screen size is between 610px and 1186px------*/
-  @media screen and (min-width: 610px) and (max-width: 1186px){
-    .experience-outer{
-        height: auto;
-      }
-      .exp-box{
-        height: auto;
-      }
-      .experience-box{
-        height: auto;
-      }
-      .exp-title{
-        font-weight: 500;
-      }
-      .exp-content{
-        font-weight: 250;
-      }
-  }
-
-  /* ---------If the screen size is 600px wide or less--------*/
-  @media screen and (max-width: 600px){
-    .experience-outer{
-      height: auto;
-    }
-    .exp-box{
-      height: auto;
-    }
-    .experience-box{
-      height: auto;
-    }
-    .exp-title{
-      font-weight: 400;
-    }
-    .exp-content{
-      font-weight: 300;
-    }
-  }
-             /*--------Skills Section------*/
-  .skills-outer{
-    height: 660px;
-    width: 90%;
-    padding-left: 180px;
-    margin-top: 25px;
-    margin-bottom: 30px;
-
-            /*...before this the image indide the block becomes bigger in 
-                                  tablet and mobile .*/
-  }
-
-  .skills-box{
-    height: 660px;
-    background-color: rgba(55, 50, 50, 0.847);
-    background-size: cover;
-    width: 100%;
-    margin-bottom: 30px;
-
-  }
-
-  .skills-title{
-    font-weight: 700;
-    font-family: Oswald,sans-serif;
-    color: beige;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 40px;
-    margin-top: 20px;
-  }
-
-  .skills-content{
-    font-weight: 300;
-    font-family: Exo,sans-serif;
-    color: beige;
-    margin-top: 11px;
-    padding-left: 55px;
-    position: relative;
-  }
-  .skills-img-box{
-    background-image: url(../images/digital-journ5.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 7px;
-    height: 350px;
-    width: 350px;
-    right: 225px;
-    position: absolute;
-}
-  .skills-img{
-    background-color: rgba(0, 0, 0, 0.632);
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    border-radius: 7px;
-    position: inherit;
-  }
-
-/* --------If the screen size is between 610px and 1186px------*/
-  @media screen and (min-width: 410px) and (max-width: 1186px){
-    .skills-outer{
-        height: auto;
-    }
-    .skills-box{
-        height: auto;
-    }
-    .skills-img{
-        height: auto;
-    }
-    .skills-img-box{
-        height: auto;
-    }
-    .skills-title{
-        font-weight: 500;
-    }
 }
 
-/* ---------If the screen size is 600px wide or less--------*/
-  @media screen and (max-width: 400px){
-    .skills-box{
-        height: auto;
-    }
-    .skills-outer{
-        height: auto;
-    }
-    .skills-img{
-        display: none;
-    }
-    .skills-img-box{
-        display: none;
-    }
-    .skills-title{
-        font-weight: 400;
-    }
-    .skills-content{
-        font-weight: 250;
-    }
+.exp-box {
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.744)), url(../images/digital-journ1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 
+.exp-title {
+  font-weight: 700;
+  font-family: Oswald, sans-serif;
+  color: beige;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5%;
+  margin-top: 2%;
+}
 
+.exp-content {
+  font-weight: 500;
+  font-family: Exo, sans-serif;
+  color: beige;
+  margin-top: 3%;
 
-  /*--------------------------------------------------------------
+}
+
+/*--------Skills Section------*/
+.skills-outer {
+  min-height: 660px;
+  position: relative;
+  margin: 5% 10%;
+  background-color: #373232d8;
+}
+
+.skills-box {
+  height: auto;
+  width: 100%;
+  position: relative;
+
+}
+
+.skills-title {
+  font-weight: 700;
+  font-family: Oswald, sans-serif;
+  color: beige;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.skills-content {
+  font-weight: 300;
+  font-family: Exo, sans-serif;
+  color: beige;
+  margin-top: 11px;
+  padding-left: 55px;
+  position: relative;
+}
+
+.skills-img-box {
+  background-image: url(../images/digital-journ5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 7px;
+  height: 350px;
+  width: 350px;
+  right: 10%;
+  position: absolute;
+}
+
+.skills-img {
+  background-color: rgba(0, 0, 0, 0.632);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  position: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  .skills-img-box {
+    display: none;
+  }
+}
+
+/*--------------------------------------------------------------
   # Contact page 
   --------------------------------------------------------------*/
-  .contact {
-    margin-top: 5px;;
-    display: block;
-  }
-  
-  .form-control {
-    background-color: rgba(81, 71, 71, 0.61);
-    padding: 12px 9px;
-    font-size: large;
-  }
-  .fontAwesome {
-    font-family: Helvetica, 'FontAwesome', sans-serif;
-    margin: 2px;
-  }
-  .contact h2{
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #fff;
-    font-family: Oswald,sans-serif;
-    display: block;
-  }
+.contact {
+  margin-top: 5%;
+  display: block;
+}
 
-  .btn-get-started {
-    font-family: Exo, sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    display:block;
-    padding: 12px 50px;
-    border-radius: 4px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: 0.3s;
-    color: #fff;
-    background: #159765;
-    margin: 9px 2px;
-  }
+.form-control {
+  background-color: #ffffffcc;
+  padding: 12px 9px;
+  font-size: large;
+}
 
-  .btn-get-started:hover {
-    background: #0f5b3e;
-  }
+.fontAwesome {
+  font-family: Helvetica, 'FontAwesome', sans-serif;
+  margin: 2px;
+}
+
+.contact h2 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  font-family: Oswald, sans-serif;
+  display: block;
+}
+
+.contact-btn {
+  font-family: Exo, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+  padding: 12px 50px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  color: #fff;
+  background: #159765;
+  margin: 9px 2px;
+}
+
+.contact-btn:hover {
+  background: #0f5b3e;
+}
 
 /* ---------If the screen size is 600px wide or less--------*/
-  @media screen and (max-width: 600px) {
-    .contact {
-        margin-top: 22%;;
+@media screen and (max-width: 600px) {
+  .contact {
+    margin-top: 22%;
+    ;
   }
-  }            
+}
+
 /* --------If the screen size is between 600px and 1015px------*/
-  @media screen and (min-width: 400px) and (max-width: 1015px){
-    .contact {
-        margin-top: 35%;;
+@media screen and (min-width: 400px) and (max-width: 1015px) {
+  .contact {
+    margin-top: 35%;
+    ;
   }
-  }
+}
 
 
-    /*--------------------------------------------------------------
+/*--------------------------------------------------------------
   # Thank You page 
   --------------------------------------------------------------*/
-  .adout-outer{
-    height:350px;
-    width: 100%;
-    margin-top: 180px;
-    padding-left: 180px;
-    margin-bottom: 25px;
+.thanks-outer {
+  height: 350px;
+  width: 100%;
+  margin-top: 180px;
+  padding-left: 180px;
+  margin-bottom: 25px;
 }
-  .about-contect{
-    height: 350px;
-    width: 88%;
-    background-color: rgba(245, 245, 220, 0.692);
-    position: relative;
-    --bs-gutter-x: 0rem;
-  }
-  
-  .thanks{
-    font-weight: 700;
-    font-family: Roboto,sans-serif;
-    color: #000;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 30px
-  }
-  
-  .thank_sentence{
-    font-weight: 700;
-    font-family: Exo,sans-serif;
-    color: #000;
-    text-align: center;
-    margin-top: 90px;
-    left: 43%;
-  }
-  
-  .chick{
-    font-size: 100px;
-    font-weight: 700;
-    position: absolute;
-    display: block;
-    left: 45%;
-    padding: 20px;
-    color: #159765;
+
+.thanks-contect {
+  height: 350px;
+  width: 88%;
+  background-color: rgba(245, 245, 220, 0.692);
+  position: relative;
+  --bs-gutter-x: 0rem;
+}
+
+.thanks {
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 30px
+}
+
+.thanks_sentence {
+  font-weight: 700;
+  font-family: Exo, sans-serif;
+  color: #000;
+  text-align: center;
+  margin-top: 90px;
+  left: 43%;
+}
+
+.chick_icon {
+  font-size: 100px;
+  font-weight: 700;
+  position: absolute;
+  display: block;
+  left: 45%;
+  padding: 20px;
+  color: #159765;
+}
+
+/* ---------If the screen size is 600px wide or less--------*/
+@media screen and (max-width: 600px) {
+  .chick {
+    font-size: 90px;
+    font-weight: 600;
+    left: 35%;
   }
 
-  /* ---------If the screen size is 600px wide or less--------*/
-  @media screen and (max-width: 600px) {
-    .chick{
-        font-size: 90px;
-        font-weight: 600;
-        left: 35%;
-  }
-  .thank_sentence{
+  .thank_sentence {
     font-weight: 600;
   }
-  .thanks{
+
+  .thanks {
     font-weight: 600;
   }
 }

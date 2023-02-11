@@ -105,6 +105,14 @@ The Oswald, Roboto and Exo font are the main fonts used throughout the whole web
 - The footer was annoying. It kepting sticking on top of the header. I gave it the margin-top:100% so that it can go down it worked but it add a more size to the whole page. The mistake was that I was using percintage rather than a px or rem mersuermints. It worked well when the  margin-bottom: 10px; and margin-top: 20px;
 
 - 
+
+- The hero image was not responsive 
+
+I had to change the size from cover to contain 
+
+- The button under the hero image was not responsive though I gave it the justify-content-center class and it was floating to the left so I had to change its display to flex and give it the approbrite margin top and bottom.
+
+- the box inside
 ### Known bugs
 1. 
 
