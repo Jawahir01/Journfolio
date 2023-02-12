@@ -120,7 +120,6 @@ I had to change the size from cover to contain
 
 
 # Further Testing
--
 
 
 # Deployment
@@ -132,29 +131,36 @@ I had to change the size from cover to contain
 # credits
 
 ### Content
-1. All content is a resume sample.
+1. All the content is a resume sample.
  Source: https://www.bestsampleresume.com/sample-communication-resume/digital-journalist-resume.html
-    *Note* I changed the name of the candidate to Mathew Allen.
+    **Note** I changed the name of the candidate to Mathew Allen.
 
-2. The website is my version from
+2. The header code is edited using the nav and the navbar sections from https://www.w3schools.com/bootstrap5/
+
+2. The Hero image code is edited using 
+
+3. The icons in the website were from [Font Awesome](https://fontawesome.com)
+
+4. The idea of the span in the Hero text, bttuons and the contact form are from 
     https://bootstrapmade.com/photofolio-bootstrap-photography-website-template
-    I used the span on the main page and the contact form with some changes.
 
-3. The icons in the footer were from [Font Awesome](https://fontawesome.com)
+5. The testimonial code is edited using the Quotes Slideshow section and the Testimonials section from https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp 
 
-4. The header code is from https://getbootstrap.com/docs/5.3/examples/headers/#
-
-5. In the Contact page: the icons inside palceholder is from [Stackoverflow](https://stackoverflow.com/questions/19350291/use-font-awesome-icon-in-placeholder). The member @huckbit -Mar 29, 2016 at 14:43- shared his method [code ](https://codepen.io/huckbit/pen/rezezb?editors=1100#0)(https://fontawesome.com/v4/cheatsheet/).
+6. In the Contact page, the icons inside palceholder is from [Stackoverflow](https://stackoverflow.com/questions/19350291/use-font-awesome-icon-in-placeholder). The member @huckbit _Mar 29, 2016 at 14:43_-_ shared his method [code ](https://codepen.io/huckbit/pen/rezezb?editors=1100#0)(https://fontawesome.com/v4/cheatsheet/).
 I used the rest of the FontAwesome hex-code icons from (https://fontawesome.com/v4/cheatsheet/)
 
 
 ### Media
-1. I edited the design of the logo using [Canva] (https://www.canva.com/logos)
+1. I edited the design of the logo from [Canva](https://www.canva.com/logos)
 
-2. The photo used on the home page and the pictures of the About page are from
-    www.google.com
+2. The photo used in the home page _Hero image_ is from https://www.dreamstime.com/
+
+3. The phtos in the testimonial section are _fake people_ http://www.google.com I searched for random face generator.
 
 
 ### Acknowledgements
-1. 
-2. 
+1. My supervisor at City of Bristol College _Pasquale Fasulo_.
+2. My Mentor Guidance at Code Institute _Rohit Sharma_.
+3. Tutors at Code Institute for their assistance _Rebbeca_ and _Ted_
+
+
