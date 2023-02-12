@@ -494,19 +494,18 @@ q {
   # Thank You page 
   --------------------------------------------------------------*/
 .thanks-outer {
-  height: 350px;
+  height: auto;
   width: 100%;
-  margin-top: 180px;
-  padding-left: 180px;
-  margin-bottom: 25px;
+margin-top:0 2%;
+padding:0 5%;
+
+  
 }
 
 .thanks-contect {
-  height: 350px;
-  width: 88%;
+  min-height: 200px;
+  width: 100%;
   background-color: rgba(245, 245, 220, 0.692);
-  position: relative;
-  --bs-gutter-x: 0rem;
 }
 
 .thanks {
@@ -516,41 +515,24 @@ q {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-top: 30px
+  margin-top: 2%
 }
 
-.thanks_sentence {
+.thank_sentence {
   font-weight: 700;
   font-family: Exo, sans-serif;
   color: #000;
   text-align: center;
-  margin-top: 90px;
-  left: 43%;
+  margin-top:1%;
+  margin-bottom: 1%;
+
 }
 
 .chick_icon {
   font-size: 100px;
   font-weight: 700;
-  position: absolute;
   display: block;
-  left: 45%;
-  padding: 20px;
+  text-align: center;
+  padding: 1%;
   color: #159765;
-}
-
-/* ---------If the screen size is 600px wide or less--------*/
-@media screen and (max-width: 600px) {
-  .chick {
-    font-size: 90px;
-    font-weight: 600;
-    left: 35%;
-  }
-
-  .thank_sentence {
-    font-weight: 600;
-  }
-
-  .thanks {
-    font-weight: 600;
-  }
 }
