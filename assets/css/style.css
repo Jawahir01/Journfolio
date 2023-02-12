@@ -58,13 +58,15 @@ body {
   text-align: center;
 }
 
-.footer-social-links a, i {
+.footer-social-links a,
+i {
   color: rgba(255, 255, 255, 0.5);
   padding: 2% 5%;
   display: inline-block;
 }
 
-.footer-social-links a, i:hover {
+.footer-social-links a,
+i:hover {
   color: #fff;
 }
 
@@ -184,6 +186,7 @@ body {
   margin-top: 30px;
   padding: 30px;
 }
+
 .testimonial {
   margin-top: 15%;
   display: block;
@@ -215,7 +218,8 @@ body {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -246,7 +250,8 @@ body {
 }
 
 /* On hover, add a black background color */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: #159765;
   color: white;
 }
@@ -272,7 +277,8 @@ body {
 }
 
 /* Add a background color to the active dot/circle */
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171d0;
 }
 
@@ -390,7 +396,7 @@ q {
   # Contact page 
   --------------------------------------------------------------*/
 
-  /* Contact Form Section */
+/* Contact Form Section */
 .contact {
   margin-top: 2%;
   display: block;
@@ -456,7 +462,7 @@ q {
 
 /* Thank you Heading */
 .thanks {
-  font-weight:bolder;
+  font-weight: bolder;
   font-family: Exo, sans-serif;
   color: #000;
   text-align: center;
