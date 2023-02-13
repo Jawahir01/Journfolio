@@ -36,6 +36,11 @@ body {
   background-color: #159765;
 }
 
+.logo {
+  height: 150px;
+  width: 150px; 
+}
+
 
 /*--------------------------------------------------------------
   # Footer
@@ -143,12 +148,12 @@ i:hover {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
-  background: #159765c0;
+  background: #0b7d51d8;
   text-decoration: none;
 }
 
 .btn-get-started:hover {
-  background: #0f5b3edc;
+  background: #0f5b3e5f;
   color: #fff;
 }
 
@@ -287,7 +292,7 @@ q {
 
 /* Add a blue color to the author */
 .author {
-  color: #159765;
+  color: #0f5b3e;
   font-size: large;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -430,12 +435,12 @@ q {
   text-transform: uppercase;
   transition: 0.3s;
   color: #fff;
-  background: #159765;
+  background: #0b7d51d8;
   margin: 9px 2px;
 }
 
 .contact-btn:hover {
-  background: #0f5b3e;
+  background: #0f5b3e5f;
 }
 
 /*--------------------------------------------------------------
