@@ -143,7 +143,7 @@ i:hover {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
-  background: #159765;
+  background: #159765c0;
   text-decoration: none;
 }
 
@@ -215,8 +215,7 @@ i:hover {
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;

@@ -125,6 +125,12 @@ I had to change the size from cover to contain
 
 - the box inside
 
+**Lighthouse**
+
+when ckecking through lighthouse for mobile devices, I got these results
+![]()
+The accessibilty score was 78 so, to solve the issue for users who rely on screen readers I added _aria-label="button"_ to all button elements 
+
 ### Known bugs
 1. 
 
