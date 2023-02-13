@@ -48,14 +48,14 @@ This project is to show case my apilities and the progression of my performance 
 
 
 ### Future Features
-adding testimonials and live chat.
+adding live chat.
 
 
 
 # Typography and color scheme
 
 ### Colour Scheme
- The two main colours used are black for the background and white for the text or viceresa. Also the lime greencolor is added throughout the website whether for the span or as background hover links and buttons and the fontawesome icon in the Thank you page to give more  liveliness to the site.
+ The two main colours used are black for the background and white for the text or viceresa. Also the lime greencolor is added throughout the website whether for the span or as background hover links and buttons and the fontawesome icon in the Thank you page to give more liveliness to the site.
 
 ### Typography
 The Oswald, Roboto and Exo font are the main fonts used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly.
@@ -73,7 +73,7 @@ The Oswald, Roboto and Exo font are the main fonts used throughout the whole web
     Bootstrap was used to assist with the responsiveness and styling of the website.
 
     - **Google Fonts:**
-    Google fonts were used to import the  font into the style.css file which is used on all pages throughout the project.
+    Google fonts were linked into the html files throughout the project.
 
     - **Font Awesome 6.2.1:**
     Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
@@ -94,13 +94,24 @@ The Oswald, Roboto and Exo font are the main fonts used throughout the whole web
 # testing
 
 ### code validation
-- HTML
+- **HTML**
+    1. The index file was validated by [HTML Validator](https://validator.w3.org/) and no errors or warning found. 
+    !()[]
+
+    2. The experince file was validated by [HTML Validator](https://validator.w3.org/) and no errors or warning found.
+    !()[]
+
+    3. The contact file was validated by [HTML Validator](https://validator.w3.org/) no errors were found but a warning about the Unicode Private Use Area I used when placing the fontawesome icon folowed by (;). After searching in [Stack Overflow: Answer by Mike Smith](https://stackoverflow.com/questions/23978976/fontawesome-usage-displeases-w3c-validator/31703251#31703251) and reading the articles https://www.w3.org/TR/charmod/#C073 and https://hsivonen.fi/charmod-checking/ , I undrestood the issues that these are documented/standardized linting rules but also, if I've checked the file in different browsers and it’s working fine, I can safely ignore this warning.
+    !()[]
+
+    4. The thank you file was validated by [HTML Validator](https://validator.w3.org/)and no errors or warning found. 
+    !()[]
+
+- **CSS**
+    the style sheet was validated by using [CSS validater](https://jigsaw.w3.org/css-validator/)
+    !()[]
     
-    
-- CSS
-    1. 
-    
-### test cases (screenshots)
+### Test Cases
 
 - The footer was annoying. It kepting sticking on top of the header. I gave it the margin-top:100% so that it can go down it worked but it add a more size to the whole page. The mistake was that I was using percintage rather than a px or rem mersuermints. It worked well when the  margin-bottom: 10px; and margin-top: 20px;
 
@@ -113,6 +124,7 @@ I had to change the size from cover to contain
 - The button under the hero image was not responsive though I gave it the justify-content-center class and it was floating to the left so I had to change its display to flex and give it the approbrite margin top and bottom.
 
 - the box inside
+
 ### Known bugs
 1. 
 
