@@ -112,7 +112,7 @@ The Oswald, Roboto and Exo font are the main fonts used throughout the whole web
     !()[]
     
 ### Test Cases
-
+**Using Chrome Devtool**
 - The footer was annoying. It kepting sticking on top of the header. I gave it the margin-top:100% so that it can go down it worked but it add a more size to the whole page. The mistake was that I was using percintage rather than a px or rem mersuermints. It worked well when the  margin-bottom: 10px; and margin-top: 20px;
 
 - 
@@ -127,9 +127,13 @@ I had to change the size from cover to contain
 
 **Lighthouse**
 
-when ckecking through lighthouse for mobile devices, I got these results
+- when ckecking through lighthouse for desktop devices, I got these results
 ![]()
-The accessibilty score was 78 so, to solve the issue for users who rely on screen readers I added _aria-label="button"_ to all button elements 
+
+
+- when ckecking through lighthouse for mobile devices, I got these results
+![]()
+The accessibilty score was 78 so, to solve the issue for users who rely on screen readers I added _aria-label="button"_ to all button elements.
 
 ### Known bugs
 1. 
