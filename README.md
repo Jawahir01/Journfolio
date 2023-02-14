@@ -146,7 +146,7 @@ The Roboto font was used in the portfolio for the headings and the buttons. The 
 ## Solved bugs
 
 - ### Using Chrome Devtool
-    - The footer was annoying. It kept sticking on top of the header. I gave it the margin-top:100% so that it can go down it worked but it add a more size to the whole page. The mistake was that I was using percintage rather than a px or rem mersuermints. It worked well when the  margin-bottom: 10px; and margin-top: 20px;
+    - The Hero image ... 
 
     - For mobile device the texts in both the experience box and the skills box in the Experience page used to overlap. To fix the problem I changed the div height style from height to min-height.
     ![exp-box: before](/docs/exp-box.png)
