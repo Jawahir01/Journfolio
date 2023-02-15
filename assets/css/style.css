@@ -38,7 +38,7 @@ body {
 
 .logo {
   height: 150px;
-  width: 150px; 
+  width: 150px;
 }
 
 
@@ -79,19 +79,18 @@ i:hover {
 
 /* add a darken background effect to the image by using "linear-gradient" */
 .hero-image {
-  background: linear-gradient(#00000080, #00000080), url("../images/5.jpg") center;
-  width: 100%;
-  max-height: 800px;
-  background-size: contain;
+  background: linear-gradient(#00000080, #00000080), url("../images/5.jpg");
+  width: 95%;
+  height: auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
-  margin-top: 1%;
-  margin-bottom: 3%;
+  margin: 2%;
 }
 
 /* Add text in the middle of the image */
 .hero-container {
-  position: absolute;
+  display: contents;
+  height: auto;
 }
 
 .hero-text {
@@ -138,7 +137,7 @@ i:hover {
 /* Add avaliable for hire Button */
 .btn {
   display: block;
-  margin: 1%;
+  margin: 3%;
   padding: 0%;
 }
 
@@ -164,8 +163,8 @@ i:hover {
 .about-outer {
   min-height: 350px;
   position: relative;
-  margin: 10%;
-  background-color: #f5f5dcb8;
+  margin: 5% 2% 0% 2%;
+  background-color: #ffffffcc;
 }
 
 .about-contect {
@@ -180,7 +179,7 @@ i:hover {
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 25px
+  margin-top: 25px;
 }
 
 .content {
@@ -210,9 +209,9 @@ i:hover {
 .slideshow-container {
   min-height: 250px;
   position: relative;
-  background: #f1f1f1f1;
+  background: #ffffffcc;
   border: 2px solid #ccc;
-  margin: 0 10%;
+  margin: 0 2%;
 }
 
 /* Slides */
@@ -223,7 +222,8 @@ i:hover {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -257,7 +257,7 @@ i:hover {
 .prev:hover,
 .next:hover {
   background-color: #159765;
-  color: white;
+  color: #ffffff;
 }
 
 /* The dot/bullet/indicator container */
@@ -265,7 +265,7 @@ i:hover {
   text-align: center;
   padding: 16px;
   background: #ddd;
-  margin: 0 10%;
+  margin: 0 2%;
 }
 
 /* The dots/bullets/indicators */
@@ -309,7 +309,7 @@ q {
 .experience-outer {
   min-height: 1030px;
   position: relative;
-  margin: 3% 10%;
+  margin: 2% 5%;
 }
 
 /* add a darken background effect to the image by using "linear-gradient" */
@@ -324,9 +324,10 @@ q {
 .exp-title {
   font-weight: 700;
   font-family: Oswald, sans-serif;
-  color: beige;
+  color: #f5f5dc;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 3px;
   padding: 5%;
   margin-top: 2%;
 }
@@ -334,7 +335,7 @@ q {
 .exp-content {
   font-weight: 500;
   font-family: Exo, sans-serif;
-  color: beige;
+  color: #f5f5dc;
   margin-top: 3%;
 }
 
@@ -349,49 +350,29 @@ q {
 .skills-outer {
   min-height: 660px;
   position: relative;
-  margin: 5% 10%;
-  background-color: #373232d8;
+  margin: 2% 5%;
+  background-color: #ffffffcc
 }
 
 /* add a title and a content to the section */
 .skills-title {
   font-weight: 700;
   font-family: Oswald, sans-serif;
-  color: beige;
+  color: #000000;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 3px;
   padding: 40px;
   margin-top: 20px;
 }
 
 .skills-content {
-  font-weight: 300;
+  font-weight: 600;
   font-family: Exo, sans-serif;
-  color: beige;
-  margin-top: 11px;
+  color: #000000;
+  margin-top: 10px;
   padding-left: 55px;
   position: relative;
-}
-
-/* add a side photo with darken background effect */
-.skills-img-box {
-  background-image: url(../images/digital-journ5.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 7px;
-  height: 350px;
-  width: 350px;
-  right: 10%;
-  position: absolute;
-}
-
-.skills-img {
-  background-color: rgba(0, 0, 0, 0.632);
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  border-radius: 7px;
-  position: inherit;
 }
 
 /*--------------------------------------------------------------
@@ -459,7 +440,7 @@ q {
 .thanks-content {
   min-height: 300px;
   width: 100%;
-  background-color: rgba(245, 245, 220, 0.692);
+  background-color: #f5f5dcb0;
 }
 
 /* Thank you Heading */
@@ -518,14 +499,17 @@ hide the image in skills section */
   .skills-img-box {
     display: none;
   }
+
   .hero-text h1 {
     font-size: 30px;
     margin-bottom: 5%;
   }
+
   .hero-text p {
     font-size: 20px;
   }
-  .hero-text{
+
+  .hero-text {
     margin-top: 20%;
   }
 
