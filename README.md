@@ -1,14 +1,18 @@
 # **Purpose of the project**
-Freelance digital journalist and writer Mathew Aleen introduces his online portfolio with a professional photograph of himself and links to different sections of his website. Based in London, Allen has also lived and worked in San Francisco. The portfolio features his best and most recent work experience, as well as some of the agencies he has written for. 
+Freelance digital journalist and writer Mathew Allen introduces his online portfolio with a professional photograph of himself and links to different sections of his website. Based in London, Allen has also lived and worked in San Francisco. The portfolio features his best and most recent work experience, as well as some of the agencies he has written for. 
 
 ![The_website](/docs/site.png)
 
-## Site Owner's goals
+To visit the live site click [here](https://jawahir01.github.io/Journfolio/)
+-
+
+---
+## **Site Owner's Goals**
 -   Help clients understand more about Mathew's career and his areas of focus as a journalist.
 -   Help Mathew effectively present his skills and experience to news agencies.
 -   Help recruiters and people who are interested in Mathew's work to reach easily.
   
-## External User's goals
+## **External User's Goals**
 Whether I am a visiting user or an interested recruiter, I want to:
 - Easily find out about Who is Mathew Allen and What does he do.
 - Navigate smoothly to Mathew's previous experiences in journalism and his main skills.
@@ -18,19 +22,19 @@ Whether I am a visiting user or an interested recruiter, I want to:
 
 # **UX Design**
 
-## Wireframes
+## **Wireframes**
 
  - **Desktop Wireframe using Miro:**
-    ![Desktop view](https://github.com/../../docs/miro-desktop.png)
+    ![Desktop view](docs/miro-desktop.png)
 
  - **Tablet Wireframe using Miro:**
-    ![Tablet view](https://github.com/Jawahir01/../../../docs/miro-tablet.png)
+    ![Tablet view](docs/miro-tablet.png)
 
  - **Mobile Wireframe using Miro:**
-    ![Mobile view](https://github.com/Jawahir01/../../../docs/miro-phone.png)
+    ![Mobile view](docs/miro-phone.png)
 
 
-## Features
+## **Features**
 
  - **Header**
  
@@ -46,7 +50,7 @@ Whether I am a visiting user or an interested recruiter, I want to:
 
 - **Home Page**
 
-    - It has a big hero photo of Mathew with his name and his title job. Addtionly, a button that takes the user directly to make cantact with Mathew
+    - It has a big hero photograph of Mathew with his name and his title job. Addtionly, a button that takes the user directly to a contact page. 
        
     ![hero_image](/docs/Hero_image.png)
 
@@ -70,7 +74,7 @@ Whether I am a visiting user or an interested recruiter, I want to:
 
 - **Contact Page**
 
-    It has a form of input fields [name, phone number, email address and a message text area] for a user who would like to contact Mathew. The fields in the form are required to be filled so the user can send his message.
+    It has a form of input fields [name, phone number, email address and a message text area] for a user who would like to have a contact with Mathew. The fields in the form are required to be filled in order for the user to send his message.
     
     ![contact-page](/docs/contact.png)
 
@@ -87,22 +91,23 @@ Whether I am a visiting user or an interested recruiter, I want to:
 - Additional page for his news reports or articles.
 - User should recieve an email after sending a message.
 
+---
 
 
 # **Typography and color scheme**
 
-## Colour Scheme
+## **Colour Scheme**
 The two main colours used are black(background) and white (text) or vice versa. Also, the lime green color is added throughout the website whether for the span or as background hover links ,also for buttons and the fontawesome icon in the Thank you page to give more liveliness to the site.
 
-## Typography
+## **Typography**
 The Roboto font was used in the portfolio for the headings and the buttons. The Oswald was used for the sections' titles, except for the name in the home page the font was Cardo. The Exo font was used for the paragraphs and with Sans Serif as the fallback font in case for any reason the fonts aren't being imported into the site correctly.
  
 # **Technology**
- - ## Languages Used
+ - ## **Languages Used**
     + HTML5
     + CSS3
 
- - ## Frameworks, Libraries & Programs Used
+ - ## **Frameworks, Libraries & Programs Used:**
     - **Bootstrap 5.2.3:**
     Bootstrap was used to assist with the responsiveness and styling of the website.
 
@@ -126,18 +131,18 @@ The Roboto font was used in the portfolio for the headings and the buttons. The 
 
 # **Testing**
 
-## Code Validation
+## **Code Validation**
 - **HTML**
-    1. The index file was validated by [HTML Validator](https://validator.w3.org/) and no errors or warning were found. 
+    1. The index file was validated by [HTML Validator](https://validator.w3.org/) and no errors or warnings were found. 
     ![Home pasge](/docs/html%20validat.png)
 
-    2. The experience file was validated by [HTML Validator](https://validator.w3.org/) and no errors or warning were found.
+    2. The experience file was validated by [HTML Validator](https://validator.w3.org/) and no errors or warnings were found.
     ![Experience page](/docs/html%20validat.png)
 
     3. The contact file was validated by [HTML Validator](https://validator.w3.org/) no errors were found but a warning about the Unicode Private Use Area I used when placing the fontawesome icon folowed by (;). After searching in [Stack Overflow: Answer by Mike Smith](https://stackoverflow.com/questions/23978976/fontawesome-usage-displeases-w3c-validator/31703251#31703251) and reading the articles https://www.w3.org/TR/charmod/#C073 and https://hsivonen.fi/charmod-checking/ , I undrestood the issues that these are documented/standardized linting rules but also, if I've checked the file in different browsers and it’s working fine, I can safely ignore this warning.
     ![Contact page](docs/cont_validat.png)
 
-    4. The thank you file was validated by [HTML Validator](https://validator.w3.org/) and no errors or warning were found. 
+    4. The thank you file was validated by [HTML Validator](https://validator.w3.org/) and no errors or warnings were found. 
     ![Thank you page](/docs/html%20validat.png)
 
 - **CSS**
@@ -155,6 +160,7 @@ As a visiting user:
   
 
 ## **Test Cases**
+The Website has been tested to ensure that it runs perfectly and its features are working as expected.see the below table for the results.
 
 | Action                             |  Expectation  | Result |
 | -------------                      | :-----------: | -----: |
@@ -178,7 +184,7 @@ Scrolling down the Experience page. | The user should see a big box of darkened 
  
  ---
 
-## Fixed Bugs
+## **Fixed Bugs**
 - ### **Using Chrome Devtool:**
     - The div Hero image was not big and only centred in the middle of the page, making the name/title and down box to overlap. To fix it, I was noticed that I did not wrap the hero image div and the name/title div around their div container  and I mistakenly closed the div container before that. Then I added `display: contents;` to the div .hero-container so that the image can fill the whole width of the container. 
   
@@ -187,17 +193,17 @@ Scrolling down the Experience page. | The user should see a big box of darkened 
   
     ![exp-box: before](/docs/exp-box.png)
 
-    - The button under the hero image was floating to the left so I had to delete the __justify_content_center__ and then give it the approbrite margin top and bottom.
+    - The button under the hero image was floating to the left so I had to delete the `justify_content_center` and then give it the approbrite margin top and bottom.
   
     ![button: before](/docs/button.png)
 
 - ### **Using Lighthouse**
-    When ckecking through lighthouse for desktop and mobile devices I got these results
+    When ckecking through lighthouse for desktop and mobile devices I got these results:
     ![Desktop: before](/docs/1.png)
 
     ![Mobile: before](/docs/3.png)
 
-    The accessibilty score was 89 and 78 so, to solve the issue for users who rely on screen readers I added _aria-label="button"_ to all button elements, _aria-label="Link to"_ to all link elements and for the text elements to have sufficient color contrast against the background I darkend the background for the buttons from  #159765 to #0f5b3e5f.
+    The accessibilty score was 89 and 78 so, to solve the issue for users who rely on screen readers I added `aria-label="button"` to all button elements, `aria-label="Link` to all link elements. Also, for the text elements to have sufficient color contrast against the background I darkend the background for the buttons from  #159765 to #0f5b3e5f and after chicking again I got these results for both Desktop and Mobile Devices.
 
     ![Desktop: before](/docs/2.png)
 
@@ -208,23 +214,27 @@ No bugs were found.
 
 
 # **Deployment**
-- ### **Via VS Code**
+
 - ### **Via github pages:**
 
     To deploy the page via github pges follow these steps:
-    1. On GitHub, navigate to the repository ***
-    2. Under your repository name click **Settings**.
+    1. On GitHub, navigate to the repository https://github.com/Jawahir01/Journfolio
+    2. Click **Settings**.
     3. In the "Code and automation" section of the sidebar, click  Pages.
-    4. Under "Build and deployment", under "Source", select Deploy from a branch.
-    5. Under "Build and deployment", under "Branch", use the None or Branch drop-down menu and select a publishing source.
-    6. The live link of the website will appeare on the Github Pages section.
+    4. Under "Build and deployment":
+         - under "Source", select Deploy from a branch.
+         - Under "Branch", Main Branch
+    5. Click "Save".
+    6. Refresh the page and shortly the live link of the website will appeare.
 
-**The live link** https://jawahir01.github.io/personal_site/
+
+
+**The live link** https://jawahir01.github.io/Journfolio/
 
 
 # **Credits**
 
-## Content
+## **Content**
 1. All the content is a resume sample.
  Source: https://www.bestsampleresume.com/sample-communication-resume/digital-journalist-resume.html
 
@@ -244,7 +254,7 @@ No bugs were found.
 7. In the Contact page, the code of the icons inside the palceholder is from [Stackoverflow](https://stackoverflow.com/questions/19350291/use-font-awesome-icon-in-placeholder). The member @huckbit _Mar 29, 2016 at 14:43_ shared his method in this [code](https://codepen.io/huckbit/pen/rezezb?editors=1100#0), then I used the rest of the FontAwesome hex-code icons from https://fontawesome.com/v4/cheatsheet/
 
 
-## Media
+## **Media**
 1. I edited the design of the logo from [Canva](https://www.canva.com/logos)
 
 2. The photograph used in the home page _Hero image_ is from https://www.dreamstime.com/
@@ -252,7 +262,7 @@ No bugs were found.
 3. The photos in the testimonial section are _fake people_ from [google](http://www.google.com). I searched for _random face generator_.
 
 
-## Acknowledgements
+## **Acknowledgements**
 1. My supervisor at City of Bristol College _Pasquale Fasulo_.
 2. My Mentor Guidance at Code Institute _Rohit Sharma_.
 3. Tutors and community members at Code Institute.
