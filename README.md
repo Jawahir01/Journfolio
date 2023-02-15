@@ -40,50 +40,50 @@ Whether I am a visiting user or an interested recruiter, I want to:
  
     The header at the top of each page contains Mathew's personal logo for his website and a navigation bar links to his home page, his Experience page and his contact page. The navigation bar can extend or collapse, depending on the screen size.
     
-    ![header](/docs/header.png)
+    ![header](docs/header.png)
 
 - **Footer**
   
     The footer at the bottom of all the pages contains four icons of the social media links for _Mathew_ and it will open in a new tap when clicked.
    
-    ![footer](/docs/footer.png)
+    ![footer](docs/footer.png)
 
 - **Home Page**
 
     - It has a big hero photograph of Mathew with his name and his title job. Addtionly, a button that takes the user directly to a contact page. 
        
-    ![hero_image](/docs/Hero_image.png)
+    ![hero_image](docs/Hero_image.png)
 
 
     - It also has a brief introduction about Mathew's professionals
     
-    ![About-me](/docs/about.png)
+    ![About-me](docs/about.png)
 
     - Testimonial feature that has a sample of people who new Mathew or worked with to give their expressions and opinions about him. 
     
-    ![Testimonial](/docs/testimonies.png)
+    ![Testimonial](docs/testimonies.png)
 
 - **Experience Page**
 
     It contains both Mathew's Experience roles in two different companies and a summary of his skills as a digital journalist.
 
-    ![Experience-page](/docs/experience.png)
+    ![Experience-page](docs/experience.png)
 
-    ![Experience-page](/docs/skills.png)
+    ![Experience-page](docs/skills.png)
 
 
 - **Contact Page**
 
     It has a form of input fields [name, phone number, email address and a message text area] for a user who would like to have a contact with Mathew. The fields in the form are required to be filled in order for the user to send his message.
     
-    ![contact-page](/docs/contact.png)
+    ![contact-page](docs/contact.png)
 
 
 - **Thank You Page**
 
     Once the form has been sent, the user is redirected to this thank you page confirming that the message was sent and the user will be contacted soon by Mathew.
 
-    ![Thankyou-page](/docs/thank%20s.png)
+    ![Thankyou-page](docs/thank%20s.png)
 
 
 
@@ -134,21 +134,21 @@ The Roboto font was used in the portfolio for the headings and the buttons. The 
 ## **Code Validation**
 - **HTML**
     1. The index file was validated by [HTML Validator](https://validator.w3.org/) and no errors or warnings were found. 
-    ![Home pasge](/docs/html%20validat.png)
+    ![Home pasge](docs/html%20validat.png)
 
     2. The experience file was validated by [HTML Validator](https://validator.w3.org/) and no errors or warnings were found.
-    ![Experience page](/docs/html%20validat.png)
+    ![Experience page](docs/html%20validat.png)
 
     3. The contact file was validated by [HTML Validator](https://validator.w3.org/) no errors were found but a warning about the Unicode Private Use Area I used when placing the fontawesome icon folowed by (;). After searching in [Stack Overflow: Answer by Mike Smith](https://stackoverflow.com/questions/23978976/fontawesome-usage-displeases-w3c-validator/31703251#31703251) and reading the articles https://www.w3.org/TR/charmod/#C073 and https://hsivonen.fi/charmod-checking/ , I undrestood the issues that these are documented/standardized linting rules but also, if I've checked the file in different browsers and it’s working fine, I can safely ignore this warning.
     ![Contact page](docs/cont_validat.png)
 
     4. The thank you file was validated by [HTML Validator](https://validator.w3.org/) and no errors or warnings were found. 
-    ![Thank you page](/docs/html%20validat.png)
+    ![Thank you page](docs/html%20validat.png)
 
 - **CSS**
 
     The style sheet was validated by using [CSS validater](https://jigsaw.w3.org/css-validator/)
-    ![stylesheet](/docs/css%20validate.png)
+    ![stylesheet](docs/css%20validate.png)
     
 ## **User Story**
 
@@ -172,7 +172,7 @@ The Website has been tested to ensure that it runs perfectly and its features ar
 |Scrolling down the homepage.            | the user should see a box of half-white background color with a title [About me] and a short paragraph about the site’s owner.|  It is working well as expected. |
 |Scrolling down the homepage. | the user should see a testimonial section of the title [ What they say ] and underneath it a rectangular box contains a small, rounded photo on the left and a short quote next to. There are also two arrows at the left and the right. |  It is working well as expected. |
 | Hovering over the arrows inside the testimonial box  | The user should notice the arrow is highlighted with background color and when whenever it is clicked the user should see another testimony for different person up to six people.             | It is working well as expected. |
-|Scrolling down the home page.          | The user should see a footer section. With four icons of links Facebook, Twitter, Instagram and LinkedIn          | It is working well as expected. |
+|Scrolling down the home page.          | The user should see a footer section. With four icons of links Facebook, Twitter, Instagram and LinkedIn   | It is working well as expected. |
 |Hovering over each icon in the footer Section.|The user should notice the icon is highlighted with bright color and once clicked the user will be taken to each of the icon’s website in a new tab. | It is working well as expected. |
 | Hovering over the Experience text Link in the header. | The user should notice the text link will be highlighted with bright color. Once it is clicked, the user will be taken to the Experience page. then, the link text will be highlighted with grey color indicating that now the user is in the Experience page with the same header at the top and the same footer at the bottom.| It is working well as expected.
 Scrolling down the Experience page. | The user should see a big box of darkened background picture with a title of my [WORK EXPERIENCE] and lists of paragraphs. | It is working well as expected. 
@@ -188,29 +188,26 @@ Scrolling down the Experience page. | The user should see a big box of darkened 
 - ### **Using Chrome Devtool:**
     - The div Hero image was not big and only centred in the middle of the page, making the name/title and down box to overlap. To fix it, I was noticed that I did not wrap the hero image div and the name/title div around their div container  and I mistakenly closed the div container before that. Then I added `display: contents;` to the div .hero-container so that the image can fill the whole width of the container. 
   
-    ![exp-box: before](/docs/hero%20image.png)
+    ![exp-box: before](docs/hero%20image.png)
     - For mobile device the texts in both the experience box and the skills box in the Experience page used to overlap. To fix the problem I changed the div height style from height to min-height.
   
-    ![exp-box: before](/docs/exp-box.png)
+    ![exp-box: before](docs/exp-box.png)
 
     - The button under the hero image was floating to the left so I had to delete the `justify_content_center` and then give it the approbrite margin top and bottom.
   
-    ![button: before](/docs/button.png)
+    ![button: before](docs/button.png)
 
 - ### **Using Lighthouse**
     When ckecking through lighthouse for desktop and mobile devices I got these results:
-    ![Desktop: before](/docs/1.png)
+    ![Desktop: before](docs/1.png)
 
-    ![Mobile: before](/docs/3.png)
+    ![Mobile: before](docs/3.png)
 
     The accessibilty score was 89 and 78 so, to solve the issue for users who rely on screen readers I added `aria-label="button"` to all button elements, `aria-label="Link` to all link elements. Also, for the text elements to have sufficient color contrast against the background I darkend the background for the buttons from  #159765 to #0f5b3e5f and after chicking again I got these results for both Desktop and Mobile Devices.
 
-    ![Desktop: before](/docs/2.png)
+    ![Desktop: before](docs/2.png)
 
-    ![Mobile: before](/docs/4.png)
-
-## **Unknown Bugs**
-No bugs were found.
+    ![Mobile: before](docs/4.png)
 
 
 # **Deployment**
@@ -226,8 +223,6 @@ No bugs were found.
          - Under "Branch", Main Branch
     5. Click "Save".
     6. Refresh the page and shortly the live link of the website will appeare.
-
-
 
 **The live link** https://jawahir01.github.io/Journfolio/
 
