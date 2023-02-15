@@ -3,10 +3,9 @@ Freelance digital journalist and writer Mathew Allen introduces his online portf
 
 ![The_website](/docs/site.png)
 
-To visit the live site click [here](https://jawahir01.github.io/Journfolio/)
--
+ **To visit the live site click** [here](https://jawahir01.github.io/Journfolio/)
 
----
+
 ## **Site Owner's Goals**
 -   Help clients understand more about Mathew's career and his areas of focus as a journalist.
 -   Help Mathew effectively present his skills and experience to news agencies.
