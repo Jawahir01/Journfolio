@@ -1,7 +1,7 @@
 # **Purpose of the project**
 Freelance digital journalist and writer Mathew Aleen introduces his online portfolio with a professional photograph of himself and links to different sections of his website. Based in London, Allen has also lived and worked in San Francisco. The portfolio features his best and most recent work experience, as well as some of the agencies he has written for. 
 
-![The_website]()
+![The_website](/docs/site.png)
 
 ## Site Owner's goals
 -   Help clients understand more about Mathew's career and his areas of focus as a journalist.
@@ -14,7 +14,6 @@ Whether I am a visiting user or an interested recruiter, I want to:
 - Navigate smoothly to Mathew's previous experiences in journalism and his main skills.
 - See what other friends or co-workers may would say about Mathew's professional work.
 - Be able to Contact Mathew for further questions or any enquiries.
-
 
 
 # **UX Design**

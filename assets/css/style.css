@@ -46,7 +46,7 @@ body {
   # Footer
   --------------------------------------------------------------*/
 .footer {
-  margin-top: 5%;
+  margin-top: 10%;
   padding: 2% 5%;
   border-top: 5px solid rgba(255, 255, 255, 0.15);
 }
@@ -434,7 +434,7 @@ q {
 .thanks-outer {
   height: auto;
   width: 100%;
-  margin-top: 2%;
+  margin-top: 5%;
   padding: 0 5%;
 }
 
@@ -481,8 +481,14 @@ q {
   .nav-item {
     padding: 0px;
   }
+  .thanks-outer{
+    margin-top: 15%;
+  }
+  .footer{
+    margin-top: 60%;
+  }
 }
-
+/*make the phtohs in the testimonial sections smaller */
 @media (max-width: 500px) {
   .Avatar {
     max-width: 100%;
@@ -493,12 +499,17 @@ q {
   }
 }
 
-/* If the screen size is 600px wide or less,
+/* If the screen size is 600px wide or less,*/
 
-hide the image in skills section */
+/*hide the image in skills section */
 @media screen and (max-width: 600px) {
   .skills-img-box {
     display: none;
+  }
+
+/*make the hero image and the Name/Tilte smaller */
+  .hero-image {
+    background-size: contain;
   }
 
   .hero-text h1 {
